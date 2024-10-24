@@ -7,7 +7,7 @@ import { Facebook, Twitter,  Instagram } from 'lucide-react'
 export default function Footer() {
   const [email, setEmail] = useState('')
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e:any) => {
     e.preventDefault()
     // In a real application, this would subscribe the user to the newsletter
     console.log('Newsletter subscription:', email)

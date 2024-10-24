@@ -1,42 +1,42 @@
 // import a from "next/a";
 // import img from "next/img";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { Card, CardContent,  CardHeader, CardTitle } from "@/components/ui/card";
+// import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 export default function FeaturesPage() {
-  const features = [
-    {
-      name: "Automation",
-      description: "Streamline your workflows with powerful automation tools.",
-      benefits: ["Save time on repetitive tasks", "Reduce human error", "Increase productivity"],
-      steps: [
-        "Define your workflow",
-        "Set up triggers and actions",
-        "Test and refine your automation",
-      ],
-    },
-    {
-      name: "Analytics",
-      description: "Gain deep insights into your business performance.",
-      benefits: ["Make data-driven decisions", "Identify trends and patterns", "Optimize your strategies"],
-      steps: [
-        "Connect your data sources",
-        "Choose your metrics and KPIs",
-        "Create custom dashboards and reports",
-      ],
-    },
-    {
-      name: "Integration",
-      description: "Seamlessly connect with your favorite tools and platforms.",
-      benefits: ["Centralize your data and workflows", "Eliminate data silos", "Enhance cross-team collaboration"],
-      steps: [
-        "Browse our integration marketplace",
-        "Authorize connections with third-party apps",
-        "Configure data flow and syncing options",
-      ],
-    },
-  ];
+  // const features = [
+  //   {
+  //     name: "Automation",
+  //     description: "Streamline your workflows with powerful automation tools.",
+  //     benefits: ["Save time on repetitive tasks", "Reduce human error", "Increase productivity"],
+  //     steps: [
+  //       "Define your workflow",
+  //       "Set up triggers and actions",
+  //       "Test and refine your automation",
+  //     ],
+  //   },
+  //   {
+  //     name: "Analytics",
+  //     description: "Gain deep insights into your business performance.",
+  //     benefits: ["Make data-driven decisions", "Identify trends and patterns", "Optimize your strategies"],
+  //     steps: [
+  //       "Connect your data sources",
+  //       "Choose your metrics and KPIs",
+  //       "Create custom dashboards and reports",
+  //     ],
+  //   },
+  //   {
+  //     name: "Integration",
+  //     description: "Seamlessly connect with your favorite tools and platforms.",
+  //     benefits: ["Centralize your data and workflows", "Eliminate data silos", "Enhance cross-team collaboration"],
+  //     steps: [
+  //       "Browse our integration marketplace",
+  //       "Authorize connections with third-party apps",
+  //       "Configure data flow and syncing options",
+  //     ],
+  //   },
+  // ];
 
   const useCases = [
     {

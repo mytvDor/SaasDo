@@ -3,7 +3,7 @@ import { useState } from 'react';
 // import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
+import { Card, CardContent,  CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { Badge } from '@/components/ui/badge';
 import { CalendarIcon, ClockIcon, DownloadIcon } from 'lucide-react';
@@ -32,7 +32,7 @@ export default function BlogResourcesPage() {
     { id: 3, title: 'The Role of AI in Modern SaaS Products', date: '2024-04-05', time: '11:00 AM EST', status: 'upcoming' },
   ];
 
-  const handleDownload = (guideId) => {
+  const handleDownload = (guideId : any) => {
     // In a real application, this would trigger the download
     console.log(`Downloading guide ${guideId}`);
     // You might also want to save the email to your mailing list here

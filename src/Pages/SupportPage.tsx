@@ -2,11 +2,11 @@ import { useState } from 'react'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Textarea } from '@/components/ui/textarea'
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card'
+import { Card, CardContent, CardDescription,  CardHeader, CardTitle } from '@/components/ui/card'
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion'
-import { Badge } from '@/components/ui/badge'
-import { SearchIcon, MessageCircleIcon, SendIcon } from 'lucide-react'
+// import { Badge } from '@/components/ui/badge'
+import { SearchIcon,  SendIcon } from 'lucide-react'
 import { FaBook, FaQuestionCircle, FaEnvelope, FaUsers } from 'react-icons/fa'
 
 export default function SupportPage() {
@@ -48,7 +48,7 @@ export default function SupportPage() {
     { id: 4, name: 'Tips & Tricks', threads: 112, posts: 945 },
   ]
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e:any) => {
     e.preventDefault()
     console.log('Support request submitted:', { name, email, message })
     setName('')

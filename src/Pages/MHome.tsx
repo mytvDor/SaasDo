@@ -1,16 +1,16 @@
-import React, { useState } from 'react';
+import  { useState } from 'react';
 // import { a } from 'react-router-dom'; // Use react-router-dom for routing
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
+// import { Input } from "@/components/ui/input";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
-import { MoonIcon, SunIcon, CheckIcon } from "@radix-ui/react-icons";
+import {  CheckIcon } from "@radix-ui/react-icons";
 
 export default function MHome() {
-  const [isDarkMode, setIsDarkMode] = useState(true);
+  const [isDarkMode]  = useState(true);
 
-  const toggleTheme = () => {
-    setIsDarkMode(!isDarkMode);
-  };
+  // const toggleTheme = () => {
+  //   setIsDarkMode(!isDarkMode);
+  // };
 
   return (
     <div className={`flex justify-center items-center min-h-screen flex-col ${isDarkMode ? 'dark' : ''}`}>

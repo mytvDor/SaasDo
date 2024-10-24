@@ -1,8 +1,8 @@
 import './App.css';
 import { BrowserRouter as Router, Route,  Routes } from 'react-router-dom';
-import Container from './Comps/Container';
-import CardMenu from './CardMenu';
-import EmailSignIn from './Comps/EmailSignIn';
+// import Container from './Comps/Container';
+// import CardMenu from './CardMenu';
+// import EmailSignIn from './Comps/EmailSignIn';
 import MHome from './Pages/MHome';
 import FeaturesPage from './Pages/FeaturesPage';
 import Navbar from './Comps/Navbar';

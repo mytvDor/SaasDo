@@ -4,7 +4,7 @@ import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Textarea } from '@/components/ui/textarea'
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select'
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card'
+import { Card, CardContent, CardDescription,  CardHeader, CardTitle } from '@/components/ui/card'
 import { MapPin, Phone, Mail, Facebook, Twitter , Instagram } from 'lucide-react'
 
 export default function ContactPage() {
@@ -13,7 +13,7 @@ export default function ContactPage() {
   const [inquiryType, setInquiryType] = useState('')
   const [message, setMessage] = useState('')
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e:any) => {
     e.preventDefault()
     console.log('Contact form submitted:', { name, email, inquiryType, message })
     setName('')

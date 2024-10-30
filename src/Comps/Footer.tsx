@@ -1,24 +1,24 @@
 import { useState } from 'react'
 // import Link from 'next/link'
-import { Button } from '@/components/ui/button'
-import { Input } from '@/components/ui/input'
-import { Facebook, Twitter,  Instagram } from 'lucide-react'
+// import { Button } from '@/components/ui/button'
+// import { Input } from '@/components/ui/input'
+import { Linkedin ,  Instagram } from 'lucide-react'
 
 export default function Footer() {
-  const [email, setEmail] = useState('')
+  // const [email, setEmail] = useState('')
 
-  const handleSubmit = (e:any) => {
-    e.preventDefault()
-    // In a real application, this would subscribe the user to the newsletter
-    console.log('Newsletter subscription:', email)
-    setEmail('')
-  }
+  // const handleSubmit = (e:any) => {
+  //   e.preventDefault()
+  //   // In a real application, this would subscribe the user to the newsletter
+  //   console.log('Newsletter subscription:', email)
+  //   setEmail('')
+  // }
 
   return (
     <footer className="border-t flex flex-wrap justify-center items-center
      border-zinc-700 bg-zinc-900 text-zinc-50">
       <div className="container px-4 py-12 md:py-24">
-        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+        <div className=" ml-28 grid gap-20 sm:grid-cols-2 lg:grid-cols-3">
           <div>
             <h2 className="mb-4 text-lg font-semibold">Quick Links</h2>
             <ul className="space-y-2">
@@ -35,25 +35,25 @@ export default function Footer() {
             <ul className="space-y-2">
               <li><a href="/legal#privacy" className="hover:text-zinc-300">Privacy Policy</a></li>
               <li><a href="/legal#terms" className="hover:text-zinc-300">Terms of Service</a></li>
-              <li><a href="/legal#cookies" className="hover:text-zinc-300">Cookie Policy</a></li>
-              <li><a href="/legal#gdpr" className="hover:text-zinc-300">GDPR Compliance</a></li>
+              {/* <li><a href="/legal#cookies" className="hover:text-zinc-300">Cookie Policy</a></li>
+              <li><a href="/legal#gdpr" className="hover:text-zinc-300">GDPR Compliance</a></li> */}
             </ul>
           </div>
           <div>
             <h2 className="mb-4 text-lg font-semibold">Connect with Us</h2>
             <div className="flex space-x-4">
-              <a href="https://facebook.com" className="text-zinc-400 hover:text-zinc-100">
+              {/* <a href="https://facebook.com" className="text-zinc-400 hover:text-zinc-100">
                 <Facebook className="h-6 w-6" />
                 <span className="sr-only">Facebook</span>
               </a>
               <a href="https://twitter.com" className="text-zinc-400 hover:text-zinc-100">
                 <Twitter className="h-6 w-6" />
                 <span className="sr-only">Twitter</span>
-              </a>
-              {/* <a href="https://linkedin.com" className="text-zinc-400 hover:text-zinc-100">
-                <aedIn className="h-6 w-6" />
-                <span className="sr-only">LinkedIn</span>
               </a> */}
+              <a href="https://linkedin.com" className="text-zinc-400 hover:text-zinc-100">
+                <Linkedin  className="h-6 w-6" />
+                <span className="sr-only">LinkedIn</span>
+              </a>
               <a href="https://instagram.com" className="text-zinc-400 hover:text-zinc-100">
                 <Instagram className="h-6 w-6" />
                 <span className="sr-only">Instagram</span>
@@ -64,7 +64,7 @@ export default function Footer() {
               </a> */}
             </div>
           </div>
-          <div>
+          {/* <div>
             <h2 className="mb-4 text-lg font-semibold">Stay Updated</h2>
             <p className="mb-4 text-sm text-zinc-400">Subscribe to our newsletter for the latest updates and offers.</p>
             <form onSubmit={handleSubmit} className="space-y-2">
@@ -78,7 +78,7 @@ export default function Footer() {
               />
               <Button type="submit" className="w-full">Subscribe</Button>
             </form>
-          </div>
+          </div> */}
         </div>
         <div className="mt-12 border-t border-zinc-700 pt-8 text-center">
           <p className="text-sm text-zinc-400">

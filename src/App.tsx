@@ -9,8 +9,9 @@ import Navbar from './Comps/Navbar';
 import Pricing from './Pages/Pricing';
 import BlogResourcesPage from './Pages/BlogResourcePage';
 import SupportPage from './Pages/SupportPage';
-import ContactPage from './Pages/ContactPage';
+// import Form from './Pages/Form';
 import Footer from './Comps/Footer';
+import ContactPage from './Pages/ContactPage';
 
 function App() {
   return (
